@@ -42,18 +42,18 @@ function SearchCountries() {
     },[]);
 
     return ( 
-        <>
+        <div>
             <header>
                 <input type="text" name="search" placeholder="Search for countries..." onChange={(e) => debounceSearch(e, debounceTimeout)}/>            
             </header>
-            <div className='Container'>      
+            <div className='container'>      
                 {
                     filteredCountries.map((country) => {
                     return <CountryCard key={country.common} image={country.png} name={country.common}/>
                     })
                 }
             </div>
-        </>
+        </div>
      );
 }
 
