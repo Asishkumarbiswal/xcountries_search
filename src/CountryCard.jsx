@@ -4,7 +4,7 @@ import "./CountryCard.css";
 const CountryCard = (props) => {
 
     return (
-        <div className = "countryCard">
+        <div className = "CountryCard">
             <img src = {props.image} alt = {props.name}/>
             <h4>{props.name}</h4>
         </div>
