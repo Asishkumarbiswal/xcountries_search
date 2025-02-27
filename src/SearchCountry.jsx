@@ -42,11 +42,11 @@ function SearchCountries() {
     },[]);
 
     return ( 
-        <div>
+        <>
             <header>
                 <input type="text" name="search" placeholder="Search for countries..." onChange={(e) => debounceSearch(e, debounceTimeout)}/>            
             </header>
-            <div className='Countries'>
+            <div className='countryCard'>
                 
                 {
                     filteredCountries.map((country) => {
@@ -54,7 +54,7 @@ function SearchCountries() {
                     })
                 }
             </div>
-        </div>
+        </>
      );
 }
 
