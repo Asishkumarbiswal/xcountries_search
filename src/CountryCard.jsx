@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from "./CountryCard.module.css";
+import "./CountryCard.css";
 
 const CountryCard = (props) => {
 
     return (
-        <div className = {styles.countryCard}>
+        <div className = "CountryCard">
             <img src = {props.image} alt = {props.name}/>
             <h4>{props.name}</h4>
         </div>

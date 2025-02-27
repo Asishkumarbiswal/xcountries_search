@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CountryCard from './CountryCard';
-import styles from './SearchCountry.module.css';
+import './SearchCountry.css';
 
 function SearchCountries() {
     const [countries, setCountries] = useState([]);
@@ -42,11 +42,11 @@ function SearchCountries() {
     },[]);
 
     return ( 
-        <>
+        <div>
             <header>
                 <input type="text" name="search" placeholder="Search for countries..." onChange={(e) => debounceSearch(e, debounceTimeout)}/>            
             </header>
-            <div className={styles.countryCard}>
+            <div className='countryCard'>
                 
                 {
                     filteredCountries.map((country) => {
@@ -54,7 +54,7 @@ function SearchCountries() {
                     })
                 }
             </div>
-        </>
+        </div>
      );
 }
 
