@@ -1,0 +1,19 @@
+.Countries{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+header{
+    background: rgb(242, 242, 242);
+    height: 10%;
+    box-shadow: 0px 2px 10px 1px #aaa;
+}
+
+input{
+    height: 25px;
+    width: 40rem;
+    margin: 10px 0;
+}
