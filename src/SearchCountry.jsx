@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CountryCard from './CountryCard';
-import './SearchCountry.css';
+import styles from './SearchCountry.module.css';
 
 function SearchCountries() {
     const [countries, setCountries] = useState([]);
@@ -46,7 +46,7 @@ function SearchCountries() {
             <header>
                 <input type="text" name="search" placeholder="Search for countries..." onChange={(e) => debounceSearch(e, debounceTimeout)}/>            
             </header>
-            <div className='countryCard'>
+            <div className={styles.countryCard}>
                 
                 {
                     filteredCountries.map((country) => {
